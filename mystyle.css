@@ -1,0 +1,66 @@
+@import "https://www.nerdfonts.com/assets/css/webfont.css";
+
+html, body {
+    opacity: 0;
+    animation: ani 2.5s forwards;
+    margin: 0;
+    overflow: hidden;
+    text-align: center;
+    background-color: #000;
+    background-size:100%;
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    height:100%;
+    width:100%;
+}
+@keyframes ani {
+    0% {opacity: 0;}
+    50% {opacity: 0.5;}
+    100% {opacity: 1;}
+}
+P { 
+    text-align: center;
+    color: chartreuse;
+}
+.main {
+    font-family: monospace;
+    font-size: 50px;
+    display: inline-block;
+    -webkit-animation: rainbow 3s infinite; 
+}
+@-webkit-keyframes rainbow{
+    0%{color: orange;}  
+    10%{color: purple;} 
+    20%{color: red;}
+    30%{color: CadetBlue;}
+    40%{color: yellow;}
+    50%{color: coral;}
+    60%{color: green;}
+    70%{color: cyan;}
+    80%{color: DeepPink;}
+    90%{color: DodgerBlue;}
+    100%{color: orange;}
+}
+a {
+    color: white;
+}
+.gen {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: rgb(142,191,66);
+  color: white;
+  border: 1px solid #4CAF50; /* Green */
+}
+.gs-divider {
+    padding: 0;
+    margin: 0;
+    background: #1e5799;
+    background: -moz-linear-gradient(left, #1e5799 0%, #f300ff 50%, #e0ff00 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#1e5799), color-stop(50%,#f300ff), color-stop(100%,#e0ff00));
+    background: -webkit-linear-gradient(left, #1e5799 0%,#f300ff 50%,#e0ff00 100%);
+    background: -o-linear-gradient(left, #1e5799 0%,#f300ff 50%,#e0ff00 100%);
+    background: -ms-linear-gradient(left, #1e5799 0%,#f300ff 50%,#e0ff00 100%);
+    background: linear-gradient(to right, #1e5799 0%,#f300ff 50%,#e0ff00 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#e0ff00',GradientType=1 );
+    height: 2px;
+    border-bottom: 1px solid #000;
+}
